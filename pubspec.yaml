@@ -1,0 +1,21 @@
+name: tomodels
+description: A simple json to dart models generator
+version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.17.1 <3.0.0'
+
+dependencies:
+  path: ^1.8.2
+  process_run: ^0.12.3+2
+  convert: "^3.0.1"
+  http: ^0.13.4
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.16.0
+
+
+executables:
+  tomodels: tomodels
