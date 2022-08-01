@@ -28,18 +28,19 @@ Use global activate to install this package into your device :
 
 config.dart
 ```dart
-String  jsonpath  =  "tomodels/json";
-String  modelspath  =  "tomodels/models";
+String jsonpath = "tomodels/json";
+String modelspath = "tomodels/models";
 
-List<Map<String, dynamic>> endpoint  = [
-	{
-		"name":  "",
-		"url":  "",
-		"methods":  "",
-		"headers": {"Content-Type":  "application/json"},
-		"body": {}
-	}
+List<Map<String, dynamic>> endpoint = [
+  {
+    "name": "",
+    "url": "",
+    "methods": "",
+    "headers": {"Content-Type": "application/json"},
+    "body": {}
+  }
 ];
+
 ```
 
 you can change json path or models path directory.
@@ -48,18 +49,19 @@ you can change json path or models path directory.
 
 **Example** : 
 ```dart
-String  jsonpath  =  "tomodels/json";
-String  modelspath  =  "tomodels/models";
+String jsonpath = "tomodels/json";
+String modelspath = "tomodels/models";
 
-List<Map<String, dynamic>> endpoint  = [
-	{
-		"name":  "product",
-		"url":  "https://dummyjson.com/products/1",
-		"methods":  "get", 
-		"headers": {"Content-Type":  "application/json"},
-		"body": {}
-	}
+List<Map<String, dynamic>> endpoint = [
+  {
+    "name": "product",
+    "url": "https://dummyjson.com/products/1",
+    "methods": "get",
+    "headers": {"Content-Type": "application/json"},
+    "body": {}
+  }
 ];
+
 ```
 for methods you can change it to `get, post, put or delete`.
 
@@ -81,21 +83,22 @@ for generate models without generate json, you must change the name in Map endpo
 
 **Example**
 ```dart
-String  jsonpath  =  "tomodels/json";
-String  modelspath  =  "tomodels/models";
+String jsonpath = "tomodels/json";
+String modelspath = "tomodels/models";
 
-List<Map<String, dynamic>> endpoint  = [
-	{
-		"name": "product",
-		"url": "",
-		"methods": "", 
-		"headers": {"Content-Type":  "application/json"},
-		"body": {}
-	}, 
-	{
-		"name": "category"
-	}, // if you just use this config to generate models from .json without fetching data, you can just type name like this without url, methods, etc
+List<Map<String, dynamic>> endpoint = [
+  {
+    "name": "product",
+    "url": "",
+    "methods": "",
+    "headers": {"Content-Type": "application/json"},
+    "body": {}
+  },
+  {
+    "name": "category"
+  }, // if you just use this config to generate models from .json without fetching data, you can just type name like this without url, methods, etc
 ];
+
 ```
 
 #### After you chenge the config just run
