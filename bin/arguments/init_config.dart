@@ -27,6 +27,7 @@ touch $maindir/$configDir/config.dart
   if (await readConfig.exists()) {
     var _data = await readConfig.writeAsString("""
 String jsonpath = "$maindir/json";
+String modelspath = "$maindir/models";
 List<Map<String, dynamic>> endpoint = [
   {
     "name": "",
