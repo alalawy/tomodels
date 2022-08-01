@@ -101,6 +101,6 @@ List<Map<String, dynamic>> endpoint = [
 
 ```
 
-#### After you chenge the config just run
+#### After you change the config just run
 
     tomodels create models
