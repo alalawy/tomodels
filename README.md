@@ -1,6 +1,8 @@
 # Tomodels
 Tomodels is a simpel and powerfull json to dart generator.
 
+this tools use https://github.com/javiercbk/json_to_dart to base engine with several customization
+
 ## Features
 
  - API to JSON
