@@ -67,7 +67,7 @@ for methods you can change it to `get, post, put or delete`.
 
 #### After you change the config just run command :
 
-`tomodels create json`
+    tomodels create json
 
 ```
 ├── tomodels
@@ -103,4 +103,4 @@ List<Map<String, dynamic>> endpoint = [
 
 #### After you chenge the config just run
 
-`tomodels create models`
+    tomodels create models
