@@ -9,7 +9,9 @@ environment:
 dependencies:
   path: ^1.8.2
   process_run: ^0.12.3+2
+  json_ast: "^1.0.6"
   convert: "^3.0.1"
+  dart_style: "^2.2.1"
   http: ^0.13.4
 
 dev_dependencies:
