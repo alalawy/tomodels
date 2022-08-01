@@ -126,7 +126,7 @@ class TypeDefinition {
   String toJsonExpression(String key, bool privateField) {
     final fieldKey =
         fixFieldName(key, typeDef: this, privateField: privateField);
-    final thisKey = 'this.$fieldKey';
+    final thisKey = '$fieldKey';
     if (isPrimitive) {
       return "data['$key'] = $thisKey;";
     } else if (name == 'List') {
@@ -271,7 +271,7 @@ class ClassDefinition {
       final privateFieldName =
           fixFieldName(key, typeDef: f, privateField: true);
       sb.write('if ($publicFieldName != null) {\n');
-      sb.write('this.$privateFieldName = $publicFieldName;\n');
+      sb.write('$privateFieldName = $publicFieldName;\n');
       sb.write('}\n');
     });
     sb.write('}');
@@ -287,7 +287,7 @@ class ClassDefinition {
       final f = fields[key]!;
       final fieldName =
           fixFieldName(key, typeDef: f, privateField: privateFields);
-      sb.write('this.$fieldName');
+      sb.write('$fieldName');
       if (i != len) {
         sb.write(', ');
       }
@@ -311,7 +311,7 @@ class ClassDefinition {
   String get _jsonGenFunc {
     final sb = new StringBuffer();
     sb.write(
-        '\tMap<String, dynamic> toJson() {\n\t\tfinal Map<String, dynamic> data = new Map<String, dynamic>();\n');
+        '\tMap<String, dynamic> toJson() {\n\t\tfinal Map<String, dynamic> data = <String, dynamic>{};\n');
     fields.keys.forEach((k) {
       sb.write('\t\t${fields[k]!.toJsonExpression(k, privateFields)}\n');
     });
