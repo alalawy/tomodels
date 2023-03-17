@@ -1,18 +1,18 @@
 name: tomodels
 description: A simple json to dart models generator
-version: 1.0.0
+version: 1.0.0+2
 # homepage: https://www.example.com
 
 environment:
   sdk: '>=2.19.2 <3.0.0'
 
 dependencies:
-  path: ^1.8.2
-  process_run: ^0.12.3+2
-  json_ast: "^1.0.6"
-  convert: "^3.0.1"
-  dart_style: "^2.2.1"
-  http: ^0.13.4
+  path: ^1.8.3
+  process_run: ^0.12.5+2
+  json_ast: ^1.0.6
+  convert: ^3.1.1
+  dart_style: ^2.3.0
+  http: ^0.13.5
 
 dev_dependencies:
   lints: ^2.0.0
